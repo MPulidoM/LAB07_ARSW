@@ -38,18 +38,18 @@
 
 
 <body  onLoad="BlueprintsModule.initMouse()">
-<h1>Blueprints</h1>
+<h1 style="margin-left:2rem">Blueprints</h1>
 <input style="margin-left:2rem" type="text" id="autor"> </input>
 <button type="submit" class='btn btn-light' id="ingresar" onclick="BlueprintsModule.run()" )>
     Get Blueprints
 </button>
 <div class="row">
     <div class="col-md-6">
-        <h2><i id="authorname"></i> Blueprints:</h2>
+        <h2 style="margin-left:2rem"><i id="authorname"></i> Blueprints:</h2>
     </div>
     <div class="col-md-6">
         <button type='button' class='btn btn-danger' onclick='BlueprintsModule.newBlueprint()'> create new blueprint</button>
-        <h2> Current blueprint:<i id="blueprintname"></i> </h2>
+        <h2 style="margin-left:2rem" > Current blueprint:<i id="blueprintname"></i> </h2>
     </div>
 </div>
 
@@ -63,7 +63,7 @@
             </tr>
             <tbody id="cuerpo"></tbody>
         </table>
-        <h2>Total user points:<i id="totalPoints"></i></h2>
+        <h2 style="margin-left:2rem" >Total user points:<i id="totalPoints"></i></h2>
 
     </div>
     <div class="col-xl-6" >
@@ -81,9 +81,6 @@
     </div>
 
 </div>
-
-
-
 
 <script src="js/apimock.js"></script>
 <script src="js/apiclient.js"></script>

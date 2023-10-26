@@ -41,5 +41,4 @@ apiclient = (function () {
             callback();
         }
     };
-
 })();
