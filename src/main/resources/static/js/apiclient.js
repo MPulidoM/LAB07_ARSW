@@ -36,8 +36,6 @@ apiclient = (function () {
                 }
             );
         },
-
-
         repaintPoints: function (nameAuthor, nameP, callback) {
             callback();
         }
