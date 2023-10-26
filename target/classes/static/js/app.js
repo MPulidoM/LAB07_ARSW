@@ -33,16 +33,7 @@ var BlueprintsModule = (function(){
 
 
     };
-    var graficarPlano2 = function(){
 
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.beginPath()
-        console.log(c.width, c.height)
-
-        ctx.closePath()
-
-    };
     var getBlueprints = function(funcion){
         return funcion;
     };
@@ -79,7 +70,7 @@ var BlueprintsModule = (function(){
                     `<tr>
 					<td>`+f.name+`</td>
 					<td>`+f.points+`</td>`+
-                    "<td><form><button type='button' class='btn btn-primary' onclick='BlueprintsModule.init_canvas( \"" +
+                    "<td><form><button type='button' class=\"btn btn-light\" onclick='BlueprintsModule.init_canvas( \"" +
                     name +
                     '" , "' +
                     f.name +
