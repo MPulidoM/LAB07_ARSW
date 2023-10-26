@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-
 <body  onLoad="BlueprintsModule.initMouse()">
 <h1 style="margin-left:2rem">Blueprints</h1>
 <input style="margin-left:2rem" type="text" id="autor"> </input>
@@ -64,14 +63,13 @@
     <div class="col-xl-6" >
         <canvas id="myCanvas" width="500px" height="300px" >
         </canvas>
-        <div id = "cuerpoSaveUpdate" >
+        <div id = "cuerpoSaveUpdate">
             <br>
             <button type='button' class='btn btn-success' onclick='BlueprintsModule.updateBlueprint()'>save/update
             </button>
-            <button type='button' class='btn btn-danger' onclick=''>delete</button>
+            <button type='button' class='btn btn-danger' onclick='BlueprintsModule.deleteBluprint()'>delete</button>
         </div>
     </div>
-
 </div>
 
 <script src="js/apimock.js"></script>
