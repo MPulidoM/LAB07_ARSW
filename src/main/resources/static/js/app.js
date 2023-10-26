@@ -7,8 +7,8 @@ var BlueprintsModule = (function(){
     var point=[];
     var currentBlueprint;
     var points=[];
-    var graficarPlano = function(funcion){
 
+    var graficarPlano = function(funcion){
         blueprintOpen = true;
         var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
@@ -30,8 +30,6 @@ var BlueprintsModule = (function(){
         $("#blueprintname").text(funcion['name'])
         plano=funcion['name'];
         autor=funcion['author'];
-
-
     };
 
     var getBlueprints = function(funcion){
@@ -50,7 +48,6 @@ var BlueprintsModule = (function(){
     };
 
     var getByAuthor = function (funcion) {
-
         return funcion.map(function(f){
             return {name:f.name,points:Object.keys(f.points).length};
         });
@@ -105,8 +102,6 @@ var BlueprintsModule = (function(){
             var cordenadas={"x":x,"y":y};
             api.getBlueprintsByNameAndAuthor(autor,plano,graficarPlano);
             point.push(cordenadas)
-
-            //api.repaintPoints(autor,plano,graficarPlano2)
 
         }
     };
