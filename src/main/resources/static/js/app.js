@@ -94,7 +94,6 @@ var BlueprintsModule = (function(){
         }
     };
 
-
     var draw = function () {
         if (blueprintOpen){
             var canvas = document.getElementById("myCanvas"),
@@ -120,7 +119,6 @@ var BlueprintsModule = (function(){
         api.setBlueprint(autor,plano,JSON.stringify(currentBlueprint),run)
     }
 
-
     var init_canvas= function (nombre,nombrep) {
         $("#cuerpoSaveUpdate").css("visibility", "visible");
         point=[];
@@ -141,7 +139,6 @@ var BlueprintsModule = (function(){
         } while(obj = obj.offsetParent );
         return {left: offsetLeft, top: offsetTop};
     };
-
 
     var newBlueprint = function(){
         var c = document.getElementById("myCanvas");
