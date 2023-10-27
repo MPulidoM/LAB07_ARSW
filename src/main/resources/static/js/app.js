@@ -1,4 +1,4 @@
-var api = apimock;
+var api = apiclient;
 blueprintOpen = false;
 
 var BlueprintsModule = (function () {
@@ -8,6 +8,7 @@ var BlueprintsModule = (function () {
     var currentBlueprint;
     var points = [];
     var nuevo = false;
+
     var graficarPlano = function (funcion) {
         $("#crearBlueprint").css("visibility", "visible");
         blueprintOpen = true;
@@ -18,7 +19,7 @@ var BlueprintsModule = (function () {
         console.log(c.width, c.height);
         currentBlueprint = funcion
         if (!nuevo) {
-            funcion['points'].map(function (f) {
+            currentBlueprint['points'].map(function (f) {
                 console.log(f.x)
                 ctx.lineTo(f.x, f.y);
                 ctx.stroke();
@@ -71,9 +72,9 @@ var BlueprintsModule = (function () {
 
     var generarTable = function (name, funcion) {
         nuevo = false;
-        console.log(funcion)
+        console.log(funcion);
         var fun = getByAuthor(funcion);
-        console.log("esta fue");
+        console.log("Prueba Fun: " + fun);
         $("#cuerpo").html("");
         var total = 0
         $("#totalPoints").text(total)
