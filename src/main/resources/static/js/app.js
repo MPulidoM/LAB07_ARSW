@@ -132,10 +132,10 @@ var BlueprintsModule = (function () {
         if (!nuevo) {
             nuevo = false;
             point.map(function (f) {
-                currentBlueprint.points.push(f)
+                console.log(currentBlueprint.points.push(f))
             });
             point = []
-            api.setBlueprint(autor, plano, JSON.stringify(currentBlueprint), run)
+            api.setBlueprint(autor, plano, JSON.stringify(currentBlueprint.points), run)
 
         }else{
             autor=$('#autor').val();

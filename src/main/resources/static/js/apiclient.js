@@ -27,12 +27,11 @@ apiclient = (function () {
         },
         setBlueprint: function (author, plano, bp, callback) {
             var promise = $.ajax({
-                url: Url + "/blueprints/" + author + "/" + plano + "/",
+                url: Url + author + "/" + plano + "/",
                 type: "PUT",
                 data: bp,
                 contentType: "application/json"
             });
-
             promise.then(
                 function () {
                     console.info("OK setBlueprint");
